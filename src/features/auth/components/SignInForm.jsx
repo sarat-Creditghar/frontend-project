@@ -11,19 +11,35 @@ const SignInForm = () => {
     resolver: yupResolver(signInSchema),
     mode: "onChange",
     defaultValues: {
-    email: "",
-    password: "",
-  },
+      email: "",
+      password: "",
+    },
   });
 
   const { handleSubmit, formState } = methods;
   const { isDirty, isValid } = formState;
 
-  const onSubmit = (data) => {
-    console.log("Form submitted:", data);
+  const onSubmit = async (data) => {
+    const response = await fetch(
+      "https://3feb5512b1d2.ngrok-free.app/api/whatever",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "ngrok-skip-browser-warning": "true",
+        },
+        body: JSON.stringify(data),
+      }
+    );
+
+    const result = await response.json();
+    console.log("API Response:", result);
     methods.reset();
   };
 
+
+
+  
   return (
     <>
       <FormProvider {...methods}>
@@ -40,7 +56,7 @@ const SignInForm = () => {
                 ? "bg-primary text-primary-content"
                 : "bg-gray-400 cursor-not-allowed"
             }`}
-            disabled={!isDirty || !isValid} 
+            disabled={!isDirty || !isValid}
           >
             Log In
           </button>

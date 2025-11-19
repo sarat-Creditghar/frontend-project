@@ -13,7 +13,7 @@ export const signInSchema = yup.object().shape({
     .required("Password is required")
     .matches(
       /^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/,
-      "Password: 8+ chars, 1 uppercase, 1 number, 1 special char"
+      "Password: 8+ chars"
     ),
  
 });
