@@ -4,6 +4,10 @@ import welcomecarddata from "../data/welcomecarddata.json";
 import Statscarddata from "../data/statsdata.json";
 import Carousel from "./Carousel";
 import Statscard from "./Statscard";
+import { PieChart } from "lucide-react";
+import PieChartInFlexbox from "./PieChartInFlexbox";
+import StackedBarChart from "./StackBarChart";
+import InvoiceTable from "./InvoiceTable";
 
 const Appdashbord = () => {
   return (
@@ -27,16 +31,17 @@ const Appdashbord = () => {
             ))
         }
 
-        <div className="border border-green-300 rounded-lg h-85 sm:col-span-2 lg:col-span-1 bg-accent">
-            chart
+        <div className="border border-green-300 rounded-lg h-85 sm:col-span-2 lg:col-span-1  ">
+            {/*pie chart some styling needed*/}
+            <PieChartInFlexbox/>
         </div>
-        <div className="border border-green-300 rounded-lg h-85 sm:col-span-2 lg:col-span-2 bg-accent">
-            chart
+        <div className="border border-green-300 rounded-lg h-85 sm:col-span-2 lg:col-span-2 ">
+           <StackedBarChart/>
         </div>
 
 
-        <div className="border border-green-300 rounded-lg h-85 sm:col-span-2 lg:col-span-2 bg-accent">
-            chart
+        <div className="border border-green-300 rounded-lg h-fit sm:col-span-2 lg:col-span-2  ">
+           <InvoiceTable/>
         </div>
         <div className="border border-green-300 rounded-lg h-85 sm:col-span-2 lg:col-span-1 bg-accent">
             chart

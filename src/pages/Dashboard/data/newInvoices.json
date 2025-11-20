@@ -1,0 +1,10 @@
+{
+  "title": "New Invoices",
+  "rows": [
+    { "id": "INV-1990", "category": "Android", "price": 83.74, "status": "Paid" },
+    { "id": "INV-1991", "category": "Mac", "price": 97.14, "status": "Out of date" },
+    { "id": "INV-1992", "category": "Windows", "price": 68.71, "status": "Progress" },
+    { "id": "INV-1993", "category": "Android", "price": 85.21, "status": "Paid" },
+    { "id": "INV-1994", "category": "Mac", "price": 52.17, "status": "Paid" }
+  ]
+}

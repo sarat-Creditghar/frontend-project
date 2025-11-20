@@ -6,6 +6,13 @@ import InputField from "../../../shared/components/InputField";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { signInSchema } from "../validation/authValidation";
 
+import { useNavigate } from "react-router";
+
+
+
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+console.log(BASE_URL)
 const SignInForm = () => {
   const methods = useForm({
     resolver: yupResolver(signInSchema),
@@ -19,9 +26,11 @@ const SignInForm = () => {
   const { handleSubmit, formState } = methods;
   const { isDirty, isValid } = formState;
 
+  const navigate = useNavigate();
+
   const onSubmit = async (data) => {
     const response = await fetch(
-      "https://3feb5512b1d2.ngrok-free.app/api/whatever",
+      `${BASE_URL}/auth/login`,
       {
         method: "POST",
         headers: {
@@ -33,13 +42,14 @@ const SignInForm = () => {
     );
 
     const result = await response.json();
-    console.log("API Response:", result);
-    methods.reset();
+
+    if (response.ok && result.token) {
+      localStorage.setItem("auth_token", result.token);
+
+      navigate("/dashboard");
+    }
   };
 
-
-
-  
   return (
     <>
       <FormProvider {...methods}>

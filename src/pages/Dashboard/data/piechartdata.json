@@ -1,0 +1,27 @@
+{
+  "title": "Current download",
+  "subtitle": "Downloaded by operating system",
+  "total": 188245,
+  "data": [
+    {
+      "name": "Mac",
+      "value": 12450,
+      "fill": "#F0D9FF"
+    },
+    {
+      "name": "Window",
+      "value": 56230,
+      "fill": "#C9A7FF"
+    },
+    {
+      "name": "iOS",
+      "value": 48765,
+      "fill": "#4C1D95"
+    },
+    {
+      "name": "Android",
+      "value": 70800,
+      "fill": "#1E0E62"
+    }
+  ]
+}

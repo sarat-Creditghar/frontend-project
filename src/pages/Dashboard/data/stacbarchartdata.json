@@ -1,0 +1,41 @@
+{
+  "title": "Area installed",
+  "subTitle": "(+43%) than last year",
+  "year": 2024,
+  "kpi": {
+    "asia": "1.23k",
+    "europe": "6.79k",
+    "americas": "1.01k"
+  },
+  "legend": [
+  {
+    "name": "Asia",
+    "key": "asia",
+    "color": "#4C1D95"
+  },
+  {
+    "name": "Europe",
+    "key": "europe",
+    "color": "#FFB800"
+  },
+  {
+    "name": "Americas",
+    "key": "americas",
+    "color": "#06B6D4"
+  }
+],
+  "months": [
+    { "month": "Jan", "asia": 6, "europe": 8, "americas": 6 },
+    { "month": "Feb", "asia": 20, "europe": 20, "americas": 20 },
+    { "month": "Mar", "asia": 14, "europe": 16, "americas": 15 },
+    { "month": "Apr", "asia": 18, "europe": 18, "americas": 17 },
+    { "month": "May", "asia": 8, "europe": 6, "americas": 6 },
+    { "month": "Jun", "asia": 24, "europe": 24, "americas": 20 },
+    { "month": "Jul", "asia": 7, "europe": 6, "americas": 6 },
+    { "month": "Aug", "asia": 11, "europe": 12, "americas": 10 },
+    { "month": "Sep", "asia": 15, "europe": 14, "americas": 13 },
+    { "month": "Oct", "asia": 18, "europe": 18, "americas": 16 },
+    { "month": "Nov", "asia": 20, "europe": 20, "americas": 18 },
+    { "month": "Dec", "asia": 14, "europe": 12, "americas": 10 }
+  ]
+}
