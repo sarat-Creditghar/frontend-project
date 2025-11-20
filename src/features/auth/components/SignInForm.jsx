@@ -10,9 +10,9 @@ import { useNavigate } from "react-router";
 
 
 
-const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+import { loginUser } from "../api/authApi";
+import toast from "react-hot-toast";
 
-console.log(BASE_URL)
 const SignInForm = () => {
   const methods = useForm({
     resolver: yupResolver(signInSchema),
@@ -29,24 +29,16 @@ const SignInForm = () => {
   const navigate = useNavigate();
 
   const onSubmit = async (data) => {
-    const response = await fetch(
-      `${BASE_URL}/auth/login`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "ngrok-skip-browser-warning": "true",
-        },
-        body: JSON.stringify(data),
+    try {
+      const result = await loginUser(data);
+      if (result.token) {
+        localStorage.setItem("auth_token", result.token);
+        toast.success("Login successful!");
+        navigate("/dashboard");
       }
-    );
-
-    const result = await response.json();
-
-    if (response.ok && result.token) {
-      localStorage.setItem("auth_token", result.token);
-
-      navigate("/dashboard");
+    } catch (error) {
+      console.error("Login error:", error);
+      toast.error(error.message || "Unauthorized: Invalid credentials");
     }
   };
 
@@ -61,11 +53,10 @@ const SignInForm = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className={`w-full h-11 bg-primary  text-primary-content rounded-xl font-medium ${
-              isDirty && isValid
-                ? "bg-primary text-primary-content"
-                : "bg-gray-400 cursor-not-allowed"
-            }`}
+            className={`w-full h-11 bg-primary  text-primary-content rounded-xl font-medium ${isDirty && isValid
+              ? "bg-primary text-primary-content"
+              : "bg-gray-400 cursor-not-allowed"
+              }`}
             disabled={!isDirty || !isValid}
           >
             Log In

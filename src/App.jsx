@@ -5,9 +5,11 @@ import { useEffect } from "react";
 import { useTheme } from "./features/theme/hooks/useTheme";
 
 
-import SigninPage from "./pages/SignIn/SigninPage";
-import SignupPage from "./pages/Signup/SignupPage";
-import Dashboard from "./pages/Dashboard/Dashboard";
+import SigninPage from "./features/auth/signin/SigninPage";
+import SignupPage from "./features/auth/signup/SignupPage";
+import Dashboard from "./features/dashboard/Dashboard";
+
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   const { loadTheme } = useTheme();
@@ -18,19 +20,17 @@ const App = () => {
   }, []);
 
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
+    <>
+      <Toaster position="top-center" reverseOrder={false} />
+      <Routes>
+        <Route path="/" element={<Home />} />
 
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/signin" element={<SigninPage />} />
 
-      
-      <Route path="/signup" element={<SignupPage />} />
-      <Route path="/signin" element={<SigninPage/>} />
-
-
-      <Route path='/dashboard' element={<Dashboard/>} />
-
-
-    </Routes>
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </>
   );
 };
 
