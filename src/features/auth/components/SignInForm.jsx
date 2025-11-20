@@ -12,8 +12,10 @@ import { useNavigate } from "react-router";
 
 import { loginUser } from "../api/authApi";
 import toast from "react-hot-toast";
+import { useAuth } from "../context/AuthContext";
 
 const SignInForm = () => {
+  const { login } = useAuth();
   const methods = useForm({
     resolver: yupResolver(signInSchema),
     mode: "onChange",
@@ -32,9 +34,9 @@ const SignInForm = () => {
     try {
       const result = await loginUser(data);
       if (result.token) {
-        localStorage.setItem("auth_token", result.token);
+        login(result.token, { email: data.email }); 
         toast.success("Login successful!");
-        navigate("/dashboard");
+        navigate("/"); 
       }
     } catch (error) {
       console.error("Login error:", error);

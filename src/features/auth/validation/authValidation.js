@@ -15,7 +15,7 @@ export const signInSchema = yup.object().shape({
       /^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/,
       "Password: 8+ chars"
     ),
- 
+
 });
 
 
@@ -70,26 +70,3 @@ export const signupSchema = yup.object().shape({
 
 
 
-
-
-
-// import * as yup from "yup";
-// import { signInFields } from "./authForm";
-
-// const shape = {};
-
-// // Loop through each field in the JSON
-// signInFields.forEach((field) => {
-//   if (field.validation?.regex) {
-//     // If regex exists, use it
-//     shape[field.name] = yup
-//       .string()
-//       .required(field.validation.errorMessage)
-//       .matches(field.validation.regex, field.validation.errorMessage);
-//   } else if (field.validation?.required) {
-//     // Only required
-//     shape[field.name] = yup.string().required(field.validation.errorMessage || "Required");
-//   }
-// });
-
-// export const signInSchema = yup.object().shape(shape);
