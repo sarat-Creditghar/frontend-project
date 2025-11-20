@@ -1,7 +1,7 @@
 import { useReactTable, getCoreRowModel, flexRender } from "@tanstack/react-table";
 import invoices from "../data/newInvoices.json";
 
-import { MoreVertical } from "lucide-react";
+
 
 
 const StatusBadge = ({ status }) => {
@@ -34,22 +34,13 @@ const InvoiceTable = () => {
   {
     accessorKey: "price",
     header: "Price",
-    cell: ({ getValue }) => `$${getValue().toFixed(2)}`,
   },
   {
     accessorKey: "status",
     header: "Status",
     cell: ({ getValue }) => <StatusBadge status={getValue()} />,
   },
-  {
-    id: "actions",           
-    header: "",             
-    cell: () => (
-      <button className="btn btn-ghost btn-xs">
-        <MoreVertical size={16} />
-      </button>
-    ),
-  },
+  
 ];
 
 
