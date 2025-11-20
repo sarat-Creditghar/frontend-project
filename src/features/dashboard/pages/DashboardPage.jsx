@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 import { ChevronDown } from "lucide-react";
-import { navConfig } from "./data/navconfig";
+import { navConfig } from "../data/navconfig";
 
-import SidebarList from "./components/SidebarList";
-import Appdashbord from "./components/Appdashbord";
-import AnalyticPage from "./components/AnalyticPage";
+import SidebarList from "../components/SidebarList";
+import Appdashbord from "../components/Appdashbord";
+import AnalyticPage from "../components/AnalyticPage";
 
 
 const Dashboard = () => {
@@ -36,17 +36,17 @@ const Dashboard = () => {
           <div className="px-4">Navbar Title</div>
 
           <div className="navbar-end">
-            
+
           </div>
         </nav>
         {/* Page content here */}
         <div className="p-4 mt-12">
           {/* what should write*/}
 
-     
-          
-           {activePage === "app" && <Appdashbord />}
-          {activePage === "analytics" && <AnalyticPage/>}
+
+
+          {activePage === "app" && <Appdashbord />}
+          {activePage === "analytics" && <AnalyticPage />}
           {activePage === "users" && <div>Users Page Content</div>}
           {activePage === "settings" && <div>Settings Page Content</div>}
         </div>

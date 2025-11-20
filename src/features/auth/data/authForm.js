@@ -47,10 +47,30 @@ export const signupFields = [
       },
     ],
   },
-  
+
 
   {
     row: 2,
+    columns: 2,
+    fields: [
+      {
+        name: "username",
+        type: "text",
+        label: "Username",
+        placeholder: "Enter username",
+        validation: { required: true },
+      },
+      {
+        name: "age",
+        type: "number",
+        label: "Age",
+        placeholder: "Enter age",
+        validation: { required: true },
+      },
+    ],
+  },
+  {
+    row: 3,
     columns: 2,
     fields: [
       {
@@ -61,16 +81,16 @@ export const signupFields = [
         validation: { required: true },
       },
       {
-        name: "phone",
-        type: "tel",
-        label: "Phone Number",
-        placeholder: "Enter phone number",
+        name: "password",
+        type: "password",
+        label: "Password",
+        placeholder: "Enter password",
         validation: { required: true },
       },
     ],
   },
   {
-    row: 3,
+    row: 4,
     columns: 1,
     fields: [
       {
@@ -85,7 +105,7 @@ export const signupFields = [
   },
 
   {
-    row: 4,
+    row: 5,
     columns: 3,
     fields: [
       {
@@ -113,7 +133,7 @@ export const signupFields = [
         ],
         validation: { required: true },
       }
-      
+
     ],
   },
 ];

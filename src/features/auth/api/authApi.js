@@ -18,3 +18,22 @@ export const loginUser = async (credentials) => {
 
     return result;
 };
+
+export const registerUser = async (userData) => {
+    const response = await fetch(`${BASE_URL}/auth/register`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "ngrok-skip-browser-warning": "true",
+        },
+        body: JSON.stringify(userData),
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+        throw new Error(result.message || "Registration failed");
+    }
+
+    return result;
+};

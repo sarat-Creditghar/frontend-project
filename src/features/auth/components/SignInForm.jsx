@@ -12,7 +12,7 @@ import { useNavigate } from "react-router";
 
 import { loginUser } from "../api/authApi";
 import toast from "react-hot-toast";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../hooks/useAuth";
 
 const SignInForm = () => {
   const { login } = useAuth();
@@ -34,9 +34,9 @@ const SignInForm = () => {
     try {
       const result = await loginUser(data);
       if (result.token) {
-        login(result.token, { email: data.email }); 
+        login(result);
         toast.success("Login successful!");
-        navigate("/"); 
+        navigate("/");
       }
     } catch (error) {
       console.error("Login error:", error);

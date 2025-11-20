@@ -1,6 +1,7 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext,useState,useEffect } from "react";
 
-const AuthContext = createContext();
+// eslint-disable-next-line react-refresh/only-export-components
+export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
@@ -9,22 +10,29 @@ export const AuthProvider = ({ children }) => {
 
     useEffect(() => {
         const token = localStorage.getItem("auth_token");
+        const storedUser = localStorage.getItem("auth_user");
         if (token) {
-            {/* token validation api call */ }
+           
             setIsAuthenticated(true);
-            setUser({ name: "User" });
+            setUser(storedUser ? JSON.parse(storedUser) : { name: "User" });
         }
         setLoading(false);
     }, []);
 
-    const login = (token, userData) => {
+    const login = (authData) => {
+        const { token, refreshToken, user } = authData;
         localStorage.setItem("auth_token", token);
+        localStorage.setItem("refresh_token", refreshToken);
+        localStorage.setItem("auth_user", JSON.stringify(user));
+
         setIsAuthenticated(true);
-        setUser(userData || { name: "User" });
+        setUser(user);
     };
 
     const logout = () => {
         localStorage.removeItem("auth_token");
+        localStorage.removeItem("refresh_token");
+        localStorage.removeItem("auth_user");
         setIsAuthenticated(false);
         setUser(null);
     };
@@ -36,4 +44,4 @@ export const AuthProvider = ({ children }) => {
     );
 };
 
-export const useAuth = () => useContext(AuthContext);
+

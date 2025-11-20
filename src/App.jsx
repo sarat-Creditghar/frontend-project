@@ -1,3 +1,4 @@
+
 import { Route, Routes } from "react-router";
 
 import Home from "./pages/Home/Home";
@@ -5,9 +6,9 @@ import { useEffect } from "react";
 import { useTheme } from "./features/theme/hooks/useTheme";
 
 
-import SigninPage from "./features/auth/signin/SigninPage";
-import SignupPage from "./features/auth/signup/SignupPage";
-import Dashboard from "./features/dashboard/Dashboard";
+import SigninPage from "./features/auth/pages/SigninPage";
+import SignupPage from "./features/auth/pages/SignupPage";
+import DashboardPage from "./features/dashboard/pages/DashboardPage";
 
 import { Toaster } from "react-hot-toast";
 import { AuthProvider } from "./features/auth/context/AuthContext";
@@ -34,7 +35,7 @@ const App = () => {
           path="/dashboard"
           element={
             <ProtectedRoute>
-              <Dashboard />
+              <DashboardPage />
             </ProtectedRoute>
           }
         />

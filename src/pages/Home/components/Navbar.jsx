@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router";
 import ThemeToggle from "../../../features/theme/components/ThemeToggle";
 import Sidebar from "./Sidebar";
-import { useAuth } from "../../../features/auth/context/AuthContext";
+import { useAuth } from "../../../features/auth/hooks/useAuth";
 
 const Navbar = () => {
   const { isAuthenticated, logout } = useAuth();
@@ -34,8 +34,8 @@ const Navbar = () => {
               >
                 <div className="w-10 rounded-full">
                   <img
-                    alt="Tailwind CSS Navbar component"
-                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                    alt="img"
+                    src="https://img.daisyui.com/images/profile/demo/anakeen@192.webp"
                   />
                 </div>
               </div>
@@ -46,7 +46,6 @@ const Navbar = () => {
                 <li>
                   <Link to="/dashboard" className="justify-between">
                     Dashboard
-                    <span className="badge">New</span>
                   </Link>
                 </li>
                 <li>

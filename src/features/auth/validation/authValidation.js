@@ -24,12 +24,16 @@ export const signInSchema = yup.object().shape({
 export const signupSchema = yup.object().shape({
   firstName: yup
     .string()
-    .required("First name is required")
-    .min(2, "First name must be at least 2 characters"),
+    .required()
+    .min(2, "at least 2 characters"),
   lastName: yup
     .string()
-    .required("Last name is required")
-    .min(2, "Last name must be at least 2 characters"),
+    .required()
+    .min(2, "at least 2 characters"),
+  username: yup
+    .string()
+    .required()
+    .min(3, "At least 3 characters"),
   email: yup
     .string()
     .required("Email is required")
@@ -37,10 +41,12 @@ export const signupSchema = yup.object().shape({
       /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
       "Invalid email format"
     ),
-  phone: yup
-    .string()
-    .required("Phone number is required")
-    .matches(/^[0-9]{10}$/, "Phone number must be 10 digits"),
+  age: yup
+    .number()
+    .transform((value, originalValue) => (originalValue === "" ? undefined : value)) // Convert empty string to undefined
+    .required("Age is required")
+    .positive("Age must be positive")
+    .integer("Age must be an integer"),
   address: yup
     .string()
     .required("Address is required")
@@ -56,17 +62,6 @@ export const signupSchema = yup.object().shape({
     .required("Password is required")
     .matches(
       /^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/,
-      "Password: 8+ chars, 1 uppercase, 1 number, 1 special char"
+      "Password: 8+ chars"
     ),
 });
-
-
-
-
-
-
-
-
-
-
-
