@@ -7,8 +7,8 @@ const Statscard = ({t}) => {
 
       <div className="stat place-items-center">
         <div className="stat-title">{t.title}</div>
-        <div className="stat-value text-secondary">{t.value}</div>
-        <div className="stat-desc text-secondary">{t.trend} {t.changePercentage} {t.changeLabel}</div>
+        <div className="stat-value text-accent-content">{t.value}</div>
+        <div className="stat-desc text-accent-content">{t.trend} {t.changePercentage} {t.changeLabel}</div>
       </div>
        <div>
         

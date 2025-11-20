@@ -24,7 +24,7 @@ const Dashboard = () => {
       <div className="drawer-content">
         {/* Navbar */}
 
-        <nav className="navbar w-full bg-base-300 fixed z-111">
+        <nav className="navbar w-full backdrop-blur-sm bg-accent/50 fixed z-11">
           <label
             htmlFor="my-drawer-4"
             aria-label="open sidebar"
