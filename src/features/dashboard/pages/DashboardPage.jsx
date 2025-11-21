@@ -4,8 +4,8 @@ import { ChevronDown } from "lucide-react";
 import { navConfig } from "../data/navconfig";
 
 import SidebarList from "../components/SidebarList";
-import Appdashbord from "../components/Appdashbord";
-import AnalyticPage from "../components/AnalyticPage";
+import Appdashbord from "./Appdashbord";
+import AnalyticPage from "./AnalyticPage";
 import Profilecard from "../../../shared/components/profilecard";
 import ThemeToggle from "../../theme/components/ThemeToggle";
 

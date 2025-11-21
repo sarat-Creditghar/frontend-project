@@ -5,6 +5,7 @@
     "changePercentage": "+2.6%",
     "changeLabel": "last 7 days",
     "trend": "up",
+    "color":  "#4A2984",
     "chartData": [
       { "value": 45 }, { "value": 70 }, { "value": 50 },
       { "value": 85 }, { "value": 65 }, { "value": 90 },
@@ -17,6 +18,7 @@
     "changePercentage": "+4.1%",
     "changeLabel": "last 30 days",
     "trend": "up",
+    "color":  "#02B8D8",
     "chartData": [
       { "value": 20 }, { "value": 40 }, { "value": 35 },
       { "value": 60 }, { "value": 55 }, { "value": 80 },
@@ -29,6 +31,7 @@
     "changePercentage": "-1.8%",
     "changeLabel": "last 14 days",
     "trend": "down",
+    "color":  "#FF5630",
     "chartData": [
       { "value": 90 }, { "value": 78 }, { "value": 60 },
       { "value": 70 }, { "value": 65 }, { "value": 50 },
