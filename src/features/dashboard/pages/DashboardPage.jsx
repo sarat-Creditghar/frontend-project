@@ -6,6 +6,8 @@ import { navConfig } from "../data/navconfig";
 import SidebarList from "../components/SidebarList";
 import Appdashbord from "../components/Appdashbord";
 import AnalyticPage from "../components/AnalyticPage";
+import Profilecard from "../../../shared/components/profilecard";
+import ThemeToggle from "../../theme/components/ThemeToggle";
 
 
 const Dashboard = () => {
@@ -35,8 +37,9 @@ const Dashboard = () => {
           </label>
           <div className="px-4">Navbar Title</div>
 
-          <div className="navbar-end">
-
+          <div className="navbar-end absolute  right-75">
+            <ThemeToggle/>
+             <Profilecard/>
           </div>
         </nav>
         {/* Page content here */}

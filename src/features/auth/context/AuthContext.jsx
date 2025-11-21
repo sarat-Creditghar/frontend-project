@@ -13,6 +13,7 @@ export const AuthProvider = ({ children }) => {
         const storedUser = localStorage.getItem("auth_user");
         if (token) {
            
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setIsAuthenticated(true);
             setUser(storedUser ? JSON.parse(storedUser) : { name: "User" });
         }

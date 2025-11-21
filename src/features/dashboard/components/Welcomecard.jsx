@@ -11,7 +11,7 @@ const Welcomecard = ({welcomeData}) => {
            <p className=' text-sm mt-3 mb-6'>
              {welcomeData.description}
            </p>
-           <button className='btn '>{welcomeData.buttonText}</button>
+           <button className='btn btn-secondary text-secondary-content'>{welcomeData.buttonText}</button>
         </div>
         <div className='img-part w-1/3'>
                {/*Img part*/}

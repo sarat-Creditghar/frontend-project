@@ -18,7 +18,7 @@ const Appdashbord = () => {
                 lg:grid-cols-3"
       >
         {/* Full width block top-left */}
-        <div className=" border border-green-300 rounded-lg h-70 sm:col-span-2 lg:col-span-2 bg-primary">
+        <div className=" border border-green-300 rounded-lg h-70 sm:col-span-2 lg:col-span-2 bg-accent">
             <Welcomecard  welcomeData={welcomecarddata}/>
         </div>
         <div className="border border-green-300 rounded-lg h-70 sm:col-span-2 lg:col-span-1">
