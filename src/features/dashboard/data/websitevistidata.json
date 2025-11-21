@@ -1,0 +1,65 @@
+{
+  "websiteVisits": {
+    "title": "Website visits",
+    "subtitle": "+43% than last year",
+    "teams": [
+      {
+        "name": "TeamA",
+        "color": "#6A0DFF",
+        "key": "teamA"
+      },
+      {
+        "name": "TeamB",
+        "color": "#FFC22E",
+        "key": "teamB"
+      }
+    ],
+    "monthlyData": [
+      {
+        "month": "Jan",
+        "teamA": 42,
+        "teamB": 50
+      },
+      {
+        "month": "Feb",
+        "teamA": 33,
+        "teamB": 70
+      },
+      {
+        "month": "Mar",
+        "teamA": 21,
+        "teamB": 45
+      },
+      {
+        "month": "Apr",
+        "teamA": 36,
+        "teamB": 67
+      },
+      {
+        "month": "May",
+        "teamA": 66,
+        "teamB": 39
+      },
+      {
+        "month": "Jun",
+        "teamA": 68,
+        "teamB": 35
+      },
+      {
+        "month": "Jul",
+        "teamA": 37,
+        "teamB": 23
+      },
+      {
+        "month": "Aug",
+        "teamA": 23,
+        "teamB": 70
+      },
+      {
+        "month": "Sep",
+        "teamA": 52,
+        "teamB": 22
+      }
+    ]
+  }
+}

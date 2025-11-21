@@ -1,0 +1,27 @@
+{
+  "currentVisits": {
+    "title": "Current visits",
+    "segments": [
+      {
+        "region": "America",
+        "percentage": 43.8,
+        "color": "#6A0DFF"
+      },
+      {
+        "region": "Asia",
+        "percentage": 31.3,
+        "color": "#FFD86A"
+      },
+      {
+        "region": "Europe",
+        "percentage": 18.8,
+        "color": "#005C82"
+      },
+      {
+        "region": "Africa",
+        "percentage": 6.3,
+        "color": "#FF5733"
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+    "orderTimeline": {
+        "title": "Order timeline",
+        "events": [
+            {
+                "id": 1,
+                "title": "1983, orders, $4220",
+                "time": "19 Nov 2025 10:25 pm",
+                "color": "primary",
+                "type": "order"
+            },
+            {
+                "id": 2,
+                "title": "12 Invoices have been paid",
+                "time": "18 Nov 2025 9:25 pm",
+                "color": "success",
+                "type": "invoice"
+            },
+            {
+                "id": 3,
+                "title": "Order #37745 from September",
+                "time": "17 Nov 2025 8:25 pm",
+                "color": "info",
+                "type": "order"
+            },
+            {
+                "id": 4,
+                "title": "New order placed #XF-2356",
+                "time": "16 Nov 2025 7:25 pm",
+                "color": "warning",
+                "type": "order"
+            },
+            {
+                "id": 5,
+                "title": "New order placed #XF-2346",
+                "time": "15 Nov 2025 6:25 pm",
+                "color": "error",
+                "type": "order"
+            }
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "currentSubject": {
+    "title": "Current subject",
+    "subjects": ["English", "History", "Physics", "Geography", "Chinese", "Math"],
+    "series": [
+      {
+        "name": "Series 1",
+        "color": "#6A0DFF",
+        "data": [80, 50, 30, 40, 90, 60]
+      },
+      {
+        "name": "Series 2",
+        "color": "#FFB020",
+        "data": [40, 30, 20, 70, 40, 80]
+      },
+      {
+        "name": "Series 3",
+        "color": "#00C4D6",
+        "data": [20, 70, 80, 30, 20, 40]
+      }
+    ]
+  }
+}

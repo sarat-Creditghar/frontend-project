@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { iconRegistry } from "../config/iconRegistry";
+import { iconRegistry } from "../../../config/iconRegistry"
 import { ChevronDown } from "lucide-react";
 
 const SidebarList = ({ items, isDrawerOpen, onSelect, activePage }) => {
