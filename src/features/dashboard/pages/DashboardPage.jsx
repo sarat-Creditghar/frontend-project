@@ -1,19 +1,25 @@
 import React, { useState } from "react";
+import { Outlet, useNavigate, useLocation } from "react-router";
 
 import { ChevronDown } from "lucide-react";
 import { navConfig } from "../data/navconfig";
 
 import SidebarList from "../components/SidebarList";
-import Appdashbord from "./Appdashbord";
-import AnalyticPage from "./AnalyticPage";
-import Profilecard from "../../../shared/components/profilecard";
 import ThemeToggle from "../../theme/components/ThemeToggle";
+import ProfileDropdown from "../../../shared/components/ProfileDropdown";
 
 
 const Dashboard = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  const [activePage, setActivePage] = useState("app");
+  // Extract the last part of the path to use as the active ID, or default to 'app'
+  const activePage = location.pathname.split("/").pop() === "dashboard" ? "app" : location.pathname.split("/").pop();
+
+  const handleSelect = (id) => {
+    navigate(`/dashboard/${id}`);
+  };
 
   return (
     <div className="drawer lg:drawer-open ">
@@ -38,20 +44,13 @@ const Dashboard = () => {
           <div className="px-4">Navbar Title</div>
 
           <div className="navbar-end absolute  right-75">
-            <ThemeToggle/>
-             <Profilecard/>
+            <ThemeToggle />
+            <ProfileDropdown />
           </div>
         </nav>
         {/* Page content here */}
         <div className="p-4 mt-12">
-          {/* what should write*/}
-
-
-
-          {activePage === "app" && <Appdashbord />}
-          {activePage === "analytics" && <AnalyticPage />}
-          {activePage === "users" && <div>Users Page Content</div>}
-          {activePage === "settings" && <div>Settings Page Content</div>}
+          <Outlet />
         </div>
       </div>
 
@@ -78,7 +77,7 @@ const Dashboard = () => {
                     key={items.id}
                     items={items}
                     isDrawerOpen={isDrawerOpen}
-                    onSelect={() => setActivePage(items.id)}
+                    onSelect={handleSelect}
                     activePage={activePage}
                   />
                 ))}

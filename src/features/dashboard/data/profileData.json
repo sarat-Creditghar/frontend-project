@@ -1,0 +1,79 @@
+{
+    "user": {
+        "name": "Jaydon Frankie",
+        "role": "UI/UX Designer",
+        "coverImage": "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
+        "avatar": "https://img.daisyui.com/images/profile/demo/anakeen@192.webp",
+        "stats": {
+            "followers": "1,947",
+            "following": "9,124"
+        },
+        "about": "Tart I love sugar plum I love oat cake. Sweet roll caramels I love jujubes. Topping cake wafer.",
+        "info": [
+            {
+                "icon": "MapPin",
+                "text": "Live at Madapeta"
+            },
+            {
+                "icon": "Mail",
+                "text": "ashlynn_repo@hotmail.com"
+            },
+            {
+                "icon": "Briefcase",
+                "text": "Manager at Kautzer-Ling"
+            },
+            {
+                "icon": "School",
+                "text": "Studied at Nikolaus - Leuschke"
+            }
+        ],
+        "social": [
+            {
+                "platform": "facebook",
+                "url": "https://facebook.com/jaydon",
+                "color": "text-blue-600"
+            },
+            {
+                "platform": "instagram",
+                "url": "https://instagram.com/jaydon",
+                "color": "text-pink-600"
+            },
+            {
+                "platform": "linkedin",
+                "url": "https://linkedin.com/in/jaydon",
+                "color": "text-blue-700"
+            },
+            {
+                "platform": "twitter",
+                "url": "https://twitter.com/jaydon",
+                "color": "text-sky-500"
+            }
+        ]
+    },
+    "posts": [
+        {
+            "id": 1,
+            "author": "Jaydon Frankie",
+            "date": "22 Nov 2023",
+            "content": "Pellentesque posuere. Phasellus a est. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc.",
+            "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+            "likes": 12,
+            "comments": [
+                {
+                    "id": 101,
+                    "author": "Barry Southe",
+                    "avatar": "https://img.daisyui.com/images/profile/demo/2@94.webp",
+                    "date": "22 Nov 2023",
+                    "text": "Praesent venenatis metus at tortor pulvinar varius."
+                },
+                {
+                    "id": 102,
+                    "author": "Kiley Ibbotson",
+                    "avatar": "https://img.daisyui.com/images/profile/demo/3@94.webp",
+                    "date": "22 Nov 2023",
+                    "text": "Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero."
+                }
+            ]
+        }
+    ]
+}

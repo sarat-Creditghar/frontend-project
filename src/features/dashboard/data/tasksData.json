@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "title": "Prepare Monthly Financial Report",
+        "completed": false
+    },
+    {
+        "id": 2,
+        "title": "Design New Marketing Campaign",
+        "completed": false
+    },
+    {
+        "id": 3,
+        "title": "Analyze Customer Feedback",
+        "completed": false
+    },
+    {
+        "id": 4,
+        "title": "Update Website Content",
+        "completed": false
+    },
+    {
+        "id": 5,
+        "title": "Conduct Market Research",
+        "completed": false
+    }
+]

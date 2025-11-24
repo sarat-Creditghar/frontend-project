@@ -8,6 +8,13 @@ import Statscard from "../components/Statscard";
 import PieChartInFlexbox from "../components/PieChartInFlexbox";
 import StackedBarChart from "../components/StackBarChart";
 import InvoiceTable from "../components/InvoiceTable";
+import RelatedApplications from "../components/RelatedApplications";
+import TopInstalledCountries from "../components/TopInstalledCountries"
+import TopAuthors from "../components/TopAuthors"
+import ConversionApplications from "../components/ConversionApplications";
+
+
+
 
 const Appdashbord = () => {
     return (
@@ -44,19 +51,18 @@ const Appdashbord = () => {
                 <InvoiceTable />
             </div>
             <div className="border border-green-300 rounded-lg h-85 sm:col-span-2 lg:col-span-1 bg-accent">
-                chart
+                <RelatedApplications/>
             </div>
 
 
             <div className="border border-green-300 rounded-lg h-85 sm:col-span-2 lg:col-span-1 bg-accent">
-                chart
+                <TopInstalledCountries/>
             </div>
             <div className="border border-green-300 rounded-lg h-85 sm:col-span-2 lg:col-span-1 bg-accent">
-                chart
+                <TopAuthors/>
             </div>
             <div className=" rounded-lg h-85 sm:col-span-2 lg:col-span-1  p-2 flex flex-col" >
-                <div className="h-1/2  row-span-1 bg-primary mb-4"> </div>
-                <div className="h-1/2 row-span-1 bg-primary"> </div>
+                <ConversionApplications/>
             </div>
 
 

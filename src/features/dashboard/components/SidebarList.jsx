@@ -18,14 +18,14 @@ const SidebarList = ({ items, isDrawerOpen, onSelect, activePage }) => {
     if (hasChildren) {
       toggle();
     } else {
-      onSelect();
+      onSelect(items.id);
     }
   };
 
   return (
     <div className="relative group">
       {/* List item */}
-      <li onClick={!hasChildren ? onSelect : undefined}>
+      <li onClick={!hasChildren ? () => onSelect(items.id) : undefined}>
         <button
           onClick={handleClick}
           className={`hover:bg-accent w-full is-drawer-open:my-1 is-drawer-close:-my-1 p-1 rounded-lg is-drawer-close:justify-center ${activePage === items.id ? "bg-accent" : ""
@@ -72,7 +72,7 @@ const SidebarList = ({ items, isDrawerOpen, onSelect, activePage }) => {
               <li key={child.id}>
                 <a
                   onClick={() => {
-                    onSelect();
+                    onSelect(child.id);
                   }}
                   className={activePage === child.id ? "active" : ""}
                 >

@@ -6,6 +6,9 @@ import WebsiteVisitCard from "../components/WebsiteVisitCard";
 import CurrentSubjectCard from "../components/CurrentSubjectCard";
 import OrderTimeline from "../components/OrderTimeline";
 import TrafficBySite from "../components/TrafficBySite";
+import News from "../components/News";
+import ConversionRates from "../components/ConversionRates";
+import Tasks from "../components/Tasks";
 
 const AnalyticPage = () => {
   return (
@@ -28,13 +31,13 @@ const AnalyticPage = () => {
         <WebsiteVisitCard />
       </div>
       <div className=" border border-green-300 rounded-lg sm:col-span-1 lg:col-span-5 w  bg-accent">
-        {/* barchart*/}
+        <ConversionRates/>
       </div>
       <div className=" border rounded-lg  sm:col-span-full lg:col-span-3   bg-accent">
         <CurrentSubjectCard />
       </div>
       <div className=" border border-green-300 rounded-lg sm:col-span-1 lg:col-span-5 w  bg-accent">
-        {/*NEWS*/}
+        {<News/>}
       </div>
       <div className=" bg-white border rounded-lg  sm:col-span-full lg:col-span-3 flex  justify-center">
         <OrderTimeline />
@@ -43,7 +46,7 @@ const AnalyticPage = () => {
         <TrafficBySite />
       </div>
       <div className=" bg-white border rounded-lg  sm:col-span-full lg:col-span-5 flex  justify-center">
-        
+        <Tasks/>
       </div>
     </div>
   );

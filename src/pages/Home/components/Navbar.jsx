@@ -2,12 +2,12 @@ import { Link } from "react-router";
 import ThemeToggle from "../../../features/theme/components/ThemeToggle";
 import Sidebar from "./Sidebar";
 import { useAuth } from "../../../features/auth/hooks/useAuth";
-import Profilecard from "../../../shared/components/profilecard";
+import ProfileDropdown from "../../../shared/components/ProfileDropdown";
 
 const Navbar = () => {
   const { isAuthenticated } = useAuth();
 
-  
+
 
   return (
     <header className=" h-20 fixed w-full top-0 z-50">
@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="flex-none gap-2">
           <ThemeToggle />
           {isAuthenticated ? (
-            <Profilecard/>
+            <ProfileDropdown />
           ) : (
             <Link to="/signin">
               <button className="btn btn-primary">Sign In</button>

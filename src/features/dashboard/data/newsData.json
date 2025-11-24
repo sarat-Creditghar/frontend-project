@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title": "The Future of Renewable Energy: Innovations and Challenges Ahead",
+        "description": "The sun slowly set over the horizon, painting the sky in vibrant hues of orange and pink.",
+        "time": "31 minutes",
+        "image": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=150&h=150&fit=crop"
+    },
+    {
+        "id": 2,
+        "title": "Exploring the Impact of Artificial Intelligence on Modern Healthcare",
+        "description": "She eagerly opened the gift, her eyes sparkling with excitement.",
+        "time": "a day",
+        "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=150&h=150&fit=crop"
+    },
+    {
+        "id": 3,
+        "title": "Climate Change and Its Effects on Global Food Security",
+        "description": "The old oak tree stood tall and majestic, its branches swaying gently in the breeze.",
+        "time": "2 days",
+        "image": "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=150&h=150&fit=crop"
+    },
+    {
+        "id": 4,
+        "title": "The Rise of Remote Work: Benefits, Challenges, and Future Trends",
+        "description": "The aroma of freshly brewed coffee filled the air, awakening my senses.",
+        "time": "3 days",
+        "image": "https://images.unsplash.com/photo-1593642632823-8f78536788c6?w=150&h=150&fit=crop"
+    },
+    {
+        "id": 5,
+        "title": "Understanding Blockchain Technology: Beyond Cryptocurrency",
+        "description": "The children giggled with joy as they ran through the sprinklers on a hot summer day.",
+        "time": "4 days",
+        "image": "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=150&h=150&fit=crop"
+    }
+]

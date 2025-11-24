@@ -1,50 +1,42 @@
 import React from "react";
-import { Link, useNavigate } from "react-router";
-import { useAuth } from "../../features/auth/hooks/useAuth";
+import ProfileHeader from "../../features/dashboard/components/profile/ProfileHeader";
+import ProfileAbout from "../../features/dashboard/components/profile/ProfileAbout";
+import ProfileSocial from "../../features/dashboard/components/profile/ProfileSocial";
+import ProfileStats from "../../features/dashboard/components/profile/ProfileStats";
+import ProfilePost from "../../features/dashboard/components/profile/ProfilePost";
+import ProfilePostInput from "../../features/dashboard/components/profile/ProfilePostInput";
+import profileData from "../../features/dashboard/data/profileData.json";
 
 const Profilecard = () => {
-   const navigate = useNavigate();
-  const { logout } = useAuth();
+  const { user, posts } = profileData;
 
-  const handleLogout = () => {
-    logout();
-    navigate("/signin");
-  };
   return (
-    <div className="dropdown dropdown-end">
-      <div
-        tabIndex={0}
-        role="button"
-        className="btn btn-ghost btn-circle avatar"
-      >
-        <div className="w-10 rounded-full">
-          <img
-            alt="img"
-            src="https://img.daisyui.com/images/profile/demo/anakeen@192.webp"
-          />
+    <div className="container mx-auto p-4 max-w-7xl">
+      <div className="text-sm breadcrumbs mb-4">
+        <ul>
+          <li>Dashboard</li>
+          <li>User</li>
+          <li>Profile</li>
+        </ul>
+      </div>
+      <h1 className="text-3xl font-bold mb-6">Profile</h1>
+
+      <ProfileHeader user={user} />
+
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="lg:col-span-1 space-y-6">
+          <ProfileStats stats={user.stats} />
+          <ProfileAbout about={user.about} info={user.info} />
+          <ProfileSocial social={user.social} />
+        </div>
+
+        <div className="lg:col-span-2 space-y-6">
+          <ProfilePostInput />
+          {posts.map((post) => (
+            <ProfilePost key={post.id} post={post} currentUser={user} />
+          ))}
         </div>
       </div>
-      <ul
-        tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-      >
-        <li>
-          <Link to="/dashboard" className="justify-between">
-            Dashboard
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="justify-between">
-            Home
-          </Link>
-        </li>
-        <li>
-          <a>Settings</a>
-        </li>
-        <li>
-          <button onClick={handleLogout}>Logout</button>
-        </li>
-      </ul>
     </div>
   );
 };

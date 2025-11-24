@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Jayvion Simon",
+        "likes": "9.91k",
+        "trophyColor": "text-purple-500 bg-purple-100"
+    },
+    {
+        "id": 2,
+        "name": "Deja Brady",
+        "likes": "9.12k",
+        "trophyColor": "text-cyan-500 bg-cyan-100"
+    },
+    {
+        "id": 3,
+        "name": "Lucian Obrien",
+        "likes": "1.95k",
+        "trophyColor": "text-orange-500 bg-orange-100"
+    }
+]

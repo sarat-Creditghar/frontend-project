@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "country": "Germany",
+        "flag": "🇩🇪",
+        "android": "9.91k",
+        "windows": "1.95k",
+        "apple": "9.12k"
+    },
+    {
+        "id": 2,
+        "country": "England",
+        "flag": "🇬🇧",
+        "android": "1.95k",
+        "windows": "9.12k",
+        "apple": "6.98k"
+    },
+    {
+        "id": 3,
+        "country": "France",
+        "flag": "🇫🇷",
+        "android": "9.12k",
+        "windows": "6.98k",
+        "apple": "8.49k"
+    },
+    {
+        "id": 4,
+        "country": "Korean",
+        "flag": "🇰🇷",
+        "android": "6.98k",
+        "windows": "8.49k",
+        "apple": "2.03k"
+    },
+    {
+        "id": 5,
+        "country": "USA",
+        "flag": "🇺🇸",
+        "android": "8.49k",
+        "windows": "2.03k",
+        "apple": "3.36k"
+    }
+]

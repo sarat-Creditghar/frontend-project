@@ -1,69 +1,4 @@
-// export const navConfig = [
-//   {
-//     "id": "overview",
-//     "title": "OVERVIEW",
-//     "items": [
-//       { "id": "app", "title": "App", "icon": "Zap" },
-//       { "id": "ecommerce", "title": "Ecommerce", "icon": "ShoppingBag" },
-//       { "id": "analytics", "title": "Analytics", "icon": "TrendingUp" },
-//       { "id": "banking", "title": "Banking", "icon": "CreditCard" },
-//       { "id": "booking", "title": "Booking", "icon": "Calendar" },
-//       { "id": "file", "title": "File", "icon": "FileText" },
-//       { "id": "course", "title": "Course", "icon": "BookOpen" }
-//     ]
-//   },
-//   {
-//     "id": "management",
-//     "title": "MANAGEMENT",
-//     "items": [
-//       {
-//         "id": "user",
-//         "title": "User",
-//         "icon": "User",
-//         "children": [
-//           { "id": "user-list", "title": "User List", "icon": "User" },
-//           { "id": "user-profile", "title": "User Profile", "icon": "User" }
-//         ]
-//       },
-//       {
-//         "id": "product",
-//         "title": "Product",
-//         "icon": "Package",
-//         "children": [
-//           { "id": "product-list", "title": "Product List", "icon": "Package" },
-//           { "id": "product-details", "title": "Product Details", "icon": "Package" }
-//         ]
-//       },
-//       {
-//         "id": "order",
-//         "title": "Order",
-//         "icon": "ShoppingCart",
-//         "children": [
-//           { "id": "order-list", "title": "Order List", "icon": "ShoppingCart" },
-//           { "id": "order-details", "title": "Order Details", "icon": "ShoppingCart" }
-//         ]
-//       },
-//       {
-//         "id": "invoice",
-//         "title": "Invoice",
-//         "icon": "FileDown",
-//         "children": [
-//           { "id": "invoice-list", "title": "Invoice List", "icon": "FileDown" },
-//           { "id": "invoice-details", "title": "Invoice Details", "icon": "FileDown" }
-//         ]
-//       },
-//       {
-//         "id": "blog",
-//         "title": "Blog",
-//         "icon": "FileEdit",
-//         "children": [
-//           { "id": "blog-list", "title": "Blog List", "icon": "FileEdit" },
-//           { "id": "blog-post", "title": "Blog Post", "icon": "FileEdit" }
-//         ]
-//       }
-//     ]
-//   }
-// ];
+
 
 export const navConfig = [
   {
@@ -88,8 +23,12 @@ export const navConfig = [
         title: "User",
         icon: "userIcon",
         children: [
-          { id: "user-list", title: "User List" },
-          { id: "user-profile", title: "User Profile" },
+          { id: "user-profile", title: "Profile" },
+          { id: "user-card", title: "Card" },
+          { id: "user-list", title: "List" },
+          { id: "user-create", title: "Create" },
+          { id: "user-edit", title: "Edit" },
+          { id: "user-account", title: "Account" },
         ],
       },
       {

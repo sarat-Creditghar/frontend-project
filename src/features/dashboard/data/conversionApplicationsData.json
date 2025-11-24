@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Conversion",
+        "value": "38,566",
+        "percentage": 48,
+        "color": "bg-indigo-900 text-white",
+        "icon": "user",
+        "chartColor": "#8884d8"
+    },
+    {
+        "id": 2,
+        "title": "Applications",
+        "value": "55,566",
+        "percentage": 75,
+        "color": "bg-cyan-700 text-white",
+        "icon": "mail",
+        "chartColor": "#00C49F"
+    }
+]
