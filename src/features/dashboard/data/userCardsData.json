@@ -1,0 +1,112 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Jayvion Simon",
+            "role": "CEO",
+            "avatar": "https://img.daisyui.com/images/profile/demo/anakeen@192.webp",
+            "coverImage": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+            "social": {
+                "facebook": "https://facebook.com/jayvion",
+                "instagram": "https://instagram.com/jayvion",
+                "linkedin": "https://linkedin.com/in/jayvion",
+                "twitter": "https://twitter.com/jayvion"
+            },
+            "stats": {
+                "followers": "9.91k",
+                "following": "1.95k",
+                "totalPosts": "9.12k"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Lucian Obrien",
+            "role": "CTO",
+            "avatar": "https://img.daisyui.com/images/profile/demo/2@94.webp",
+            "coverImage": "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
+            "social": {
+                "facebook": "https://facebook.com/lucian",
+                "instagram": "https://instagram.com/lucian",
+                "linkedin": "https://linkedin.com/in/lucian",
+                "twitter": "https://twitter.com/lucian"
+            },
+            "stats": {
+                "followers": "1.95k",
+                "following": "9.12k",
+                "totalPosts": "6.98k"
+            }
+        },
+        {
+            "id": 3,
+            "name": "Deja Brady",
+            "role": "Project Coordinator",
+            "avatar": "https://img.daisyui.com/images/profile/demo/3@94.webp",
+            "coverImage": "https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp",
+            "social": {
+                "facebook": "https://facebook.com/deja",
+                "instagram": "https://instagram.com/deja",
+                "linkedin": "https://linkedin.com/in/deja",
+                "twitter": "https://twitter.com/deja"
+            },
+            "stats": {
+                "followers": "9.12k",
+                "following": "6.98k",
+                "totalPosts": "8.49k"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Harrison Stein",
+            "role": "UX Designer",
+            "avatar": "https://img.daisyui.com/images/profile/demo/4@94.webp",
+            "coverImage": "https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp",
+            "social": {
+                "facebook": "https://facebook.com/harrison",
+                "instagram": "https://instagram.com/harrison",
+                "linkedin": "https://linkedin.com/in/harrison",
+                "twitter": "https://twitter.com/harrison"
+            },
+            "stats": {
+                "followers": "8.42k",
+                "following": "3.21k",
+                "totalPosts": "5.67k"
+            }
+        },
+        {
+            "id": 5,
+            "name": "Reece Chung",
+            "role": "Full Stack Developer",
+            "avatar": "https://img.daisyui.com/images/profile/demo/5@94.webp",
+            "coverImage": "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
+            "social": {
+                "facebook": "https://facebook.com/reece",
+                "instagram": "https://instagram.com/reece",
+                "linkedin": "https://linkedin.com/in/reece",
+                "twitter": "https://twitter.com/reece"
+            },
+            "stats": {
+                "followers": "7.89k",
+                "following": "4.56k",
+                "totalPosts": "9.34k"
+            }
+        },
+        {
+            "id": 6,
+            "name": "Lainey Davidson",
+            "role": "Product Manager",
+            "avatar": "https://img.daisyui.com/images/profile/demo/6@94.webp",
+            "coverImage": "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp",
+            "social": {
+                "facebook": "https://facebook.com/lainey",
+                "instagram": "https://instagram.com/lainey",
+                "linkedin": "https://linkedin.com/in/lainey",
+                "twitter": "https://twitter.com/lainey"
+            },
+            "stats": {
+                "followers": "6.54k",
+                "following": "2.87k",
+                "totalPosts": "7.12k"
+            }
+        }
+    ]
+}
