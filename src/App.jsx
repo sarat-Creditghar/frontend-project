@@ -8,20 +8,21 @@ import { useTheme } from "./features/theme/hooks/useTheme";
 
 import SigninPage from "./features/auth/pages/SigninPage";
 import SignupPage from "./features/auth/pages/SignupPage";
-import DashboardPage from "./features/dashboard/pages/DashboardPage";
-import Appdashbord from "./features/dashboard/pages/Appdashbord";
-import AnalyticPage from "./features/dashboard/pages/AnalyticPage";
-import Profilecard from "./shared/components/Profilecard";
-import UserCards from "./shared/components/UserCards";
-import UserCreate from "./shared/components/UserCreate";
-import EditUser from "./shared/components/EditUser";
-import UserAccount from "./shared/components/UserAccount";
+import DashboardLayout from "./features/dashboard/pages/DashboardLayout";
+import DashboardOverview from "./features/dashboard/pages/DashboardOverview";
+import AnalyticsPage from "./features/analytics/pages/AnalyticsPage";
+import UserProfile from "./features/user/pages/UserProfile";
+import UserList from "./features/user/pages/UserList";
+import UserCreate from "./features/user/pages/UserCreate";
+import UserEdit from "./features/user/pages/UserEdit";
+import UserAccount from "./features/user/pages/UserAccount";
 
 
 
 import { Toaster } from "react-hot-toast";
 import { AuthProvider } from "./features/auth/context/AuthContext";
 import ProtectedRoute from "./features/auth/components/ProtectedRoute";
+import UserListTable from "./features/user/components/UserListTable";
 
 
 const App = () => {
@@ -45,18 +46,18 @@ const App = () => {
           path="/dashboard"
           element={
             <ProtectedRoute>
-              <DashboardPage />
+              <DashboardLayout />
             </ProtectedRoute>
           }
         >
-          <Route index element={<Appdashbord />} />
-          <Route path="app" element={<Appdashbord />} />
-          <Route path="analytics" element={<AnalyticPage />} />
-          <Route path="user-profile" element={<Profilecard />} />
-          <Route path="user-card" element={<UserCards />} />
-          <Route path="user-list" element={<div>User List Component</div>} />
+          <Route index element={<DashboardOverview />} />
+          <Route path="app" element={<DashboardOverview />} />
+          <Route path="analytics" element={<AnalyticsPage />} />
+          <Route path="user-profile" element={<UserProfile />} />
+          <Route path="user-card" element={<UserList />} />
+          <Route path="user-list" element={<UserListTable />} />
           <Route path="user-create" element={<UserCreate />} />
-          <Route path="user-edit" element={<EditUser />} />
+          <Route path="user-edit" element={<UserEdit />} />
           <Route path="user-account" element={<UserAccount />} />
         </Route>
       </Routes>

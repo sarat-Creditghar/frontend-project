@@ -1,0 +1,91 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Angelique Morse",
+            "email": "benny89@yahoo.com",
+            "phone": "+46 8 123 456",
+            "company": "Wuckert Inc",
+            "role": "Content Creator",
+            "status": "Banned",
+            "avatar": "https://img.daisyui.com/images/profile/demo/2@94.webp"
+        },
+        {
+            "id": 2,
+            "name": "Ariana Lang",
+            "email": "avery43@hotmail.com",
+            "phone": "+54 11 1234-5678",
+            "company": "Feest Group",
+            "role": "IT Administrator",
+            "status": "Pending",
+            "avatar": "https://img.daisyui.com/images/profile/demo/3@94.webp"
+        },
+        {
+            "id": 3,
+            "name": "Aspen Schmitt",
+            "email": "mireya13@hotmail.com",
+            "phone": "+34 91 123 4567",
+            "company": "Kihn, Marquardt and Crist",
+            "role": "Financial Planner",
+            "status": "Banned",
+            "avatar": "https://img.daisyui.com/images/profile/demo/4@94.webp"
+        },
+        {
+            "id": 4,
+            "name": "Brycen Jimenez",
+            "email": "tyrel.greenholt@gmail.com",
+            "phone": "+52 55 1234 5678",
+            "company": "Rempel, Hand and Herzog",
+            "role": "HR Recruiter",
+            "status": "Active",
+            "avatar": "https://img.daisyui.com/images/profile/demo/5@94.webp"
+        },
+        {
+            "id": 5,
+            "name": "Chase Day",
+            "email": "joana.simonis84@gmail.com",
+            "phone": "+86 10 1234 5678",
+            "company": "Mraz, Donnelly and Collins",
+            "role": "Graphic Designer",
+            "status": "Banned",
+            "avatar": "https://img.daisyui.com/images/profile/demo/6@94.webp"
+        },
+        {
+            "id": 6,
+            "name": "Cordia Willms",
+            "email": "neoma_wisozk@gmail.com",
+            "phone": "+1 202 555 0199",
+            "company": "Lueilwitz and Sons",
+            "role": "Data Analyst",
+            "status": "Active",
+            "avatar": "https://img.daisyui.com/images/profile/demo/7@94.webp"
+        },
+        {
+            "id": 7,
+            "name": "Dallin Weimann",
+            "email": "kieran.schulist@yahoo.com",
+            "phone": "+44 20 7123 4567",
+            "company": "Gutkowski, Schowalter and Anderson",
+            "role": "Marketing Manager",
+            "status": "Pending",
+            "avatar": "https://img.daisyui.com/images/profile/demo/8@94.webp"
+        },
+        {
+            "id": 8,
+            "name": "Donato Padberg",
+            "email": "alessia74@hotmail.com",
+            "phone": "+61 2 1234 5678",
+            "company": "O'Keefe, Turner and Sipes",
+            "role": "Sales Representative",
+            "status": "Active",
+            "avatar": "https://img.daisyui.com/images/profile/demo/9@94.webp"
+        }
+    ],
+    "stats": {
+        "all": 20,
+        "active": 2,
+        "pending": 10,
+        "banned": 6,
+        "rejected": 2
+    }
+}

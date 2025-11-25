@@ -1,0 +1,176 @@
+{
+  "cards": [
+    {
+      "id": "weeklySales",
+      "icon": "shopping_bag",
+      "label": "Weekly sales",
+      "value": 714000,
+      "display": "714k",
+      "trend": {
+        "percentage": 2.6,
+        "direction": "up"
+      },
+      "chart": [
+        {
+          "name": "Jan",
+          "value": 120
+        },
+        {
+          "name": "Feb",
+          "value": 140
+        },
+        {
+          "name": "Mar",
+          "value": 180
+        },
+        {
+          "name": "Apr",
+          "value": 260
+        },
+        {
+          "name": "May",
+          "value": 310
+        },
+        {
+          "name": "Jun",
+          "value": 290
+        },
+        {
+          "name": "Jul",
+          "value": 240
+        }
+      ],
+      "color": "#EBD7FF",
+      "lineColor": "#7C3AED"
+    },
+    {
+      "id": "newCustomers",
+      "icon": "users",
+      "label": "New customers",
+      "value": 18500,
+      "display": "18.5k",
+      "trend": {
+        "percentage": 4.1,
+        "direction": "up"
+      },
+      "chart": [
+        {
+          "name": "Jan",
+          "value": 30
+        },
+        {
+          "name": "Feb",
+          "value": 42
+        },
+        {
+          "name": "Mar",
+          "value": 53
+        },
+        {
+          "name": "Apr",
+          "value": 61
+        },
+        {
+          "name": "May",
+          "value": 70
+        },
+        {
+          "name": "Jun",
+          "value": 65
+        },
+        {
+          "name": "Jul",
+          "value": 72
+        }
+      ],
+      "color": "#D7F7FF",
+      "lineColor": "#0284C7"
+    },
+    {
+      "id": "totalRevenue",
+      "icon": "currency",
+      "label": "Total revenue",
+      "value": 1290000,
+      "display": "1.29M",
+      "trend": {
+        "percentage": -1.8,
+        "direction": "down"
+      },
+      "chart": [
+        {
+          "name": "Jan",
+          "value": 400
+        },
+        {
+          "name": "Feb",
+          "value": 420
+        },
+        {
+          "name": "Mar",
+          "value": 380
+        },
+        {
+          "name": "Apr",
+          "value": 360
+        },
+        {
+          "name": "May",
+          "value": 390
+        },
+        {
+          "name": "Jun",
+          "value": 370
+        },
+        {
+          "name": "Jul",
+          "value": 350
+        }
+      ],
+      "color": "#FFE8D7",
+      "lineColor": "#B02409"
+    },
+    {
+      "id": "orders",
+      "icon": "package",
+      "label": "Total orders",
+      "value": 54300,
+      "display": "54.3k",
+      "trend": {
+        "percentage": 3.2,
+        "direction": "up"
+      },
+      "chart": [
+        {
+          "name": "Jan",
+          "value": 80
+        },
+        {
+          "name": "Feb",
+          "value": 95
+        },
+        {
+          "name": "Mar",
+          "value": 110
+        },
+        {
+          "name": "Apr",
+          "value": 130
+        },
+        {
+          "name": "May",
+          "value": 150
+        },
+        {
+          "name": "Jun",
+          "value": 140
+        },
+        {
+          "name": "Jul",
+          "value": 160
+        }
+      ],
+      "color": "#E3FFD7",
+      "lineColor": "#16A34A"
+    }
+  ]
+}

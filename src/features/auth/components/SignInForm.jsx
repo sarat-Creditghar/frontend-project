@@ -1,7 +1,7 @@
 import { FormProvider, useForm } from "react-hook-form";
 import { signInFields } from "../data/authForm";
 
-import InputField from "../../../shared/components/InputField";
+import InputField from "../../../shared/components/ui/InputField";
 
 import { yupResolver } from "@hookform/resolvers/yup";
 import { signInSchema } from "../validation/authValidation";

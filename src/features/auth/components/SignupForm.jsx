@@ -2,7 +2,7 @@ import { FormProvider, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { signupFields } from "../data/authForm";
 import { signupSchema } from "../validation/authValidation";
-import InputField from "../../../shared/components/InputField";
+import InputField from "../../../shared/components/ui/InputField";
 import { registerUser } from "../api/authApi";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router";

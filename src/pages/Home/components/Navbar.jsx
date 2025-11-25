@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import ThemeToggle from "../../../features/theme/components/ThemeToggle";
 import Sidebar from "./Sidebar";
 import { useAuth } from "../../../features/auth/hooks/useAuth";
-import ProfileDropdown from "../../../shared/components/ProfileDropdown";
+import ProfileDropdown from "../../../shared/components/ui/ProfileDropdown";
 
 const Navbar = () => {
   const { isAuthenticated } = useAuth();
