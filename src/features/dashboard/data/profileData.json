@@ -48,6 +48,240 @@
                 "url": "https://twitter.com/jaydon",
                 "color": "text-sky-500"
             }
+        ],
+        "followers": [
+            {
+                "id": 1,
+                "name": "Jayvion Simon",
+                "location": "United States",
+                "avatar": "https://img.daisyui.com/images/profile/demo/2@94.webp",
+                "isFollowed": false
+            },
+            {
+                "id": 2,
+                "name": "Lucian Obrien",
+                "location": "Canada",
+                "avatar": "https://img.daisyui.com/images/profile/demo/3@94.webp",
+                "isFollowed": false
+            },
+            {
+                "id": 3,
+                "name": "Deja Brady",
+                "location": "United Kingdom",
+                "avatar": "https://img.daisyui.com/images/profile/demo/4@94.webp",
+                "isFollowed": false
+            },
+            {
+                "id": 4,
+                "name": "Harrison Stein",
+                "location": "Australia",
+                "avatar": "https://img.daisyui.com/images/profile/demo/5@94.webp",
+                "isFollowed": false
+            },
+            {
+                "id": 5,
+                "name": "Reece Chung",
+                "location": "India",
+                "avatar": "https://img.daisyui.com/images/profile/demo/6@94.webp",
+                "isFollowed": true
+            },
+            {
+                "id": 6,
+                "name": "Lainey Davidson",
+                "location": "Germany",
+                "avatar": "https://img.daisyui.com/images/profile/demo/7@94.webp",
+                "isFollowed": true
+            },
+            {
+                "id": 7,
+                "name": "Cristopher Cardenas",
+                "location": "France",
+                "avatar": "https://img.daisyui.com/images/profile/demo/8@94.webp",
+                "isFollowed": true
+            },
+            {
+                "id": 8,
+                "name": "Melanie Noble",
+                "location": "Japan",
+                "avatar": "https://img.daisyui.com/images/profile/demo/9@94.webp",
+                "isFollowed": true
+            },
+            {
+                "id": 9,
+                "name": "Chase Day",
+                "location": "China",
+                "avatar": "https://img.daisyui.com/images/profile/demo/2@94.webp",
+                "isFollowed": false
+            },
+            {
+                "id": 10,
+                "name": "Shawn Manning",
+                "location": "Brazil",
+                "avatar": "https://img.daisyui.com/images/profile/demo/3@94.webp",
+                "isFollowed": false
+            },
+            {
+                "id": 11,
+                "name": "Soren Durham",
+                "location": "South Africa",
+                "avatar": "https://img.daisyui.com/images/profile/demo/4@94.webp",
+                "isFollowed": false
+            },
+            {
+                "id": 12,
+                "name": "Cortez Herring",
+                "location": "Russia",
+                "avatar": "https://img.daisyui.com/images/profile/demo/5@94.webp",
+                "isFollowed": false
+            }
+        ],
+        "friends": [
+            {
+                "id": 1,
+                "name": "Jayvion Simon",
+                "role": "CEO",
+                "avatar": "https://img.daisyui.com/images/profile/demo/2@94.webp",
+                "social": {
+                    "facebook": "#",
+                    "instagram": "#",
+                    "linkedin": "#",
+                    "twitter": "#"
+                }
+            },
+            {
+                "id": 2,
+                "name": "Lucian Obrien",
+                "role": "CTO",
+                "avatar": "https://img.daisyui.com/images/profile/demo/3@94.webp",
+                "social": {
+                    "facebook": "#",
+                    "instagram": "#",
+                    "linkedin": "#",
+                    "twitter": "#"
+                }
+            },
+            {
+                "id": 3,
+                "name": "Deja Brady",
+                "role": "Project Coordinator",
+                "avatar": "https://img.daisyui.com/images/profile/demo/4@94.webp",
+                "social": {
+                    "facebook": "#",
+                    "instagram": "#",
+                    "linkedin": "#",
+                    "twitter": "#"
+                }
+            },
+            {
+                "id": 4,
+                "name": "Harrison Stein",
+                "role": "Team Leader",
+                "avatar": "https://img.daisyui.com/images/profile/demo/5@94.webp",
+                "social": {
+                    "facebook": "#",
+                    "instagram": "#",
+                    "linkedin": "#",
+                    "twitter": "#"
+                }
+            },
+            {
+                "id": 5,
+                "name": "Reece Chung",
+                "role": "Software Developer",
+                "avatar": "https://img.daisyui.com/images/profile/demo/6@94.webp",
+                "social": {
+                    "facebook": "#",
+                    "instagram": "#",
+                    "linkedin": "#",
+                    "twitter": "#"
+                }
+            },
+            {
+                "id": 6,
+                "name": "Lainey Davidson",
+                "role": "Marketing Strategist",
+                "avatar": "https://img.daisyui.com/images/profile/demo/7@94.webp",
+                "social": {
+                    "facebook": "#",
+                    "instagram": "#",
+                    "linkedin": "#",
+                    "twitter": "#"
+                }
+            },
+            {
+                "id": 7,
+                "name": "Cristopher Cardenas",
+                "role": "UI Designer",
+                "avatar": "https://img.daisyui.com/images/profile/demo/8@94.webp",
+                "social": {
+                    "facebook": "#",
+                    "instagram": "#",
+                    "linkedin": "#",
+                    "twitter": "#"
+                }
+            },
+            {
+                "id": 8,
+                "name": "Melanie Noble",
+                "role": "UX Researcher",
+                "avatar": "https://img.daisyui.com/images/profile/demo/9@94.webp",
+                "social": {
+                    "facebook": "#",
+                    "instagram": "#",
+                    "linkedin": "#",
+                    "twitter": "#"
+                }
+            },
+            {
+                "id": 9,
+                "name": "Chase Day",
+                "role": "Data Analyst",
+                "avatar": "https://img.daisyui.com/images/profile/demo/2@94.webp",
+                "social": {
+                    "facebook": "#",
+                    "instagram": "#",
+                    "linkedin": "#",
+                    "twitter": "#"
+                }
+            }
+        ],
+        "gallery": [
+            {
+                "id": 1,
+                "title": "The Future of Renewable Energy: Innovations",
+                "date": "23 Nov 2025",
+                "imageUrl": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            },
+            {
+                "id": 2,
+                "title": "Exploring the Impact of Artificial Intelligence",
+                "date": "22 Nov 2025",
+                "imageUrl": "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
+            },
+            {
+                "id": 3,
+                "title": "Climate Change and Its Effects on Global...",
+                "date": "21 Nov 2025",
+                "imageUrl": "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
+            },
+            {
+                "id": 4,
+                "title": "The Rise of Remote Work: Benefits and...",
+                "date": "20 Nov 2025",
+                "imageUrl": "https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp"
+            },
+            {
+                "id": 5,
+                "title": "Understanding the Basics of Blockchain...",
+                "date": "19 Nov 2025",
+                "imageUrl": "https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp"
+            },
+            {
+                "id": 6,
+                "title": "The Importance of Mental Health Awareness",
+                "date": "18 Nov 2025",
+                "imageUrl": "https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
+            }
         ]
     },
     "posts": [

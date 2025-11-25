@@ -15,6 +15,7 @@ import Profilecard from "./shared/components/Profilecard";
 import UserCards from "./shared/components/UserCards";
 import UserCreate from "./shared/components/UserCreate";
 import EditUser from "./shared/components/EditUser";
+import UserAccount from "./shared/components/UserAccount";
 
 
 
@@ -52,12 +53,11 @@ const App = () => {
           <Route path="app" element={<Appdashbord />} />
           <Route path="analytics" element={<AnalyticPage />} />
           <Route path="user-profile" element={<Profilecard />} />
-          {/* Add other routes as placeholders or actual components */}
           <Route path="user-card" element={<UserCards />} />
           <Route path="user-list" element={<div>User List Component</div>} />
           <Route path="user-create" element={<UserCreate />} />
           <Route path="user-edit" element={<EditUser />} />
-          <Route path="user-account" element={<div>User Account Component</div>} />
+          <Route path="user-account" element={<UserAccount />} />
           <Route path="settings" element={<div>Settings Page Content</div>} />
         </Route>
       </Routes>

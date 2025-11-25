@@ -3,22 +3,32 @@
 
 @plugin "daisyui/theme" {
   name: "Elegant";
-  --color-base-200: #efe9e3;
-  --color-base-300: #d9cfc7;
-  --color-base-content: #3d3d3d;
+/* Backgrounds - High Contrast White */
+--color-base-100: #ffffff; /* Main canvas background */
+--color-base-200: #f8f9fa; /* Card/Container background */
+--color-base-300: #e9ecef; /* Borders and dividers */
+--color-base-content: #212529; /* Dark, readable text */
 
-  --color-primary: #c9b59c;
-  --color-primary-content: #ffffff;
+/* Primary - Bold Violet */
+--color-primary: #5b3af7;
+--color-primary-content: #ffffff; 
 
-  --color-secondary: #d9cfc7;
-  --color-secondary-content: #ffffff;
+/* Secondary - Supporting Muted Gray */
+--color-secondary: #75828a; 
+--color-secondary-content: #ffffff; 
 
-  --color-accent: #efe9e3;
-  --color-accent-content: #3d3d3d;
+/* Accent - Subtle Light Gray */
+--color-accent: #f8f9fa; 
+--color-accent-content: #212529; 
 
-  --color-neutral: #d9cfc7;
-  --color-neutral-content: #3d3d3d;
-  --color-base-100: #f9f8f6;
+/* Neutral - UI/Inactive Elements */
+--color-neutral: #868e96;
+--color-neutral-content: #ffffff; 
+
+/* Additional Utility Colors seen in the image (Success/Info/Error) */
+--color-success: #4db76a; /* Green for 'Paid' status and success charts */
+--color-info: #35b0e5; /* Light Blue for 'Applications' chart */
+--color-error: #dc3545; /* Red for potential error states (not explicitly shown but standard) */
 }
 
 @plugin "daisyui/theme" {

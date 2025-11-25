@@ -1,0 +1,104 @@
+{
+    "general": [
+        {
+            "name": "name",
+            "label": "Name",
+            "type": "text",
+            "placeholder": "Jaydon Frankie",
+            "validation": {
+                "required": "Name is required"
+            }
+        },
+        {
+            "name": "email",
+            "label": "Email address",
+            "type": "email",
+            "placeholder": "demo@minimals.cc",
+            "validation": {
+                "required": "Email is required",
+                "pattern": {
+                    "value": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+                    "message": "Invalid email address"
+                }
+            }
+        },
+        {
+            "name": "phone",
+            "label": "Phone number",
+            "type": "text",
+            "placeholder": "(416) 555-0198",
+            "validation": {
+                "required": "Phone number is required"
+            }
+        },
+        {
+            "name": "address",
+            "label": "Address",
+            "type": "text",
+            "placeholder": "90210 Broadway Blvd",
+            "validation": {
+                "required": "Address is required"
+            }
+        },
+        {
+            "name": "country",
+            "label": "Country",
+            "type": "select",
+            "placeholder": "Select Country",
+            "options": [
+                {
+                    "value": "Canada",
+                    "label": "Canada"
+                },
+                {
+                    "value": "United States",
+                    "label": "United States"
+                },
+                {
+                    "value": "United Kingdom",
+                    "label": "United Kingdom"
+                }
+            ],
+            "validation": {
+                "required": "Country is required"
+            }
+        },
+        {
+            "name": "state",
+            "label": "State/region",
+            "type": "text",
+            "placeholder": "California",
+            "validation": {
+                "required": "State is required"
+            }
+        },
+        {
+            "name": "city",
+            "label": "City",
+            "type": "text",
+            "placeholder": "San Francisco",
+            "validation": {
+                "required": "City is required"
+            }
+        },
+        {
+            "name": "zip",
+            "label": "Zip/code",
+            "type": "text",
+            "placeholder": "94116",
+            "validation": {
+                "required": "Zip code is required"
+            }
+        },
+        {
+            "name": "about",
+            "label": "About",
+            "type": "textarea",
+            "placeholder": "Praesent turpis. Phasellus viverra nulla ut metus varius laoreet. Phasellus tempus.",
+            "rows": 4,
+            "validation": {
+                "required": "About is required"
+            }
+        }
+    ]
+}
