@@ -14,6 +14,8 @@ import AnalyticPage from "./features/dashboard/pages/AnalyticPage";
 import Profilecard from "./shared/components/Profilecard";
 import UserCards from "./shared/components/UserCards";
 import UserCreate from "./shared/components/UserCreate";
+import EditUser from "./shared/components/EditUser";
+
 
 
 import { Toaster } from "react-hot-toast";
@@ -54,7 +56,7 @@ const App = () => {
           <Route path="user-card" element={<UserCards />} />
           <Route path="user-list" element={<div>User List Component</div>} />
           <Route path="user-create" element={<UserCreate />} />
-          <Route path="user-edit" element={<div>Edit User Component</div>} />
+          <Route path="user-edit" element={<EditUser />} />
           <Route path="user-account" element={<div>User Account Component</div>} />
           <Route path="settings" element={<div>Settings Page Content</div>} />
         </Route>

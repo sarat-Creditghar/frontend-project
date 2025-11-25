@@ -1,0 +1,20 @@
+{
+    "user": {
+        "id": 1,
+        "fullName": "Lucian Obrien",
+        "email": "ashlynn.ohara62@gmail.com",
+        "phoneNumber": "(416) 555-0198",
+        "phoneCountryCode": "+1",
+        "country": "Canada",
+        "state": "Virginia",
+        "city": "Rancho Cordova",
+        "address": "908 Jack Locks",
+        "zipCode": "85807",
+        "company": "Gleichner, Mueller and Tromp",
+        "role": "CTO",
+        "avatar": "https://img.daisyui.com/images/profile/demo/2@94.webp",
+        "status": "pending",
+        "isBanned": false,
+        "isEmailVerified": true
+    }
+}

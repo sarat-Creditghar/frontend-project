@@ -1,0 +1,32 @@
+{
+    "slides": [
+        {
+            "id": 1,
+            "image": "https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp",
+            "category": "FEATURED APP",
+            "title": "The Rise of Remote Work: Benefits, Challen...",
+            "description": "The aroma of freshly brewed coffee filled the air, awakening ..."
+        },
+        {
+            "id": 2,
+            "image": "https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp",
+            "category": "TRENDING NOW",
+            "title": "Mastering Time Management: Tips for Success",
+            "description": "Discover proven strategies to boost your productivity and achieve..."
+        },
+        {
+            "id": 3,
+            "image": "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
+            "category": "INNOVATION",
+            "title": "AI Revolution: Transforming Industries",
+            "description": "Explore how artificial intelligence is reshaping the future of..."
+        },
+        {
+            "id": 4,
+            "image": "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
+            "category": "LIFESTYLE",
+            "title": "Sustainable Living: Small Changes, Big Impact",
+            "description": "Learn simple habits that make a difference for our planet and..."
+        }
+    ]
+}
