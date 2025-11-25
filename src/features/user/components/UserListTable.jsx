@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Pencil, MoreVertical, Search} from "lucide-react";
+import { Pencil, MoreVertical, Search, ChevronLeft, ChevronRight } from "lucide-react";
 import userListData from "../data/userListData.json";
 
 const UserListTable = () => {
@@ -8,6 +8,8 @@ const UserListTable = () => {
     const [searchQuery, setSearchQuery] = useState("");
     const [roleFilter, setRoleFilter] = useState("Role");
     const [selectedUsers, setSelectedUsers] = useState([]);
+    const [page, setPage] = useState(0);
+    const [rowsPerPage, setRowsPerPage] = useState(5);
 
     const tabs = [
         { id: "All", label: "All", count: stats.all },
@@ -19,11 +21,11 @@ const UserListTable = () => {
 
     const getStatusColor = (status) => {
         switch (status) {
-            case "Active": return "badge-soft-success text-success";
-            case "Pending": return "badge-soft-warning text-warning";
-            case "Banned": return "badge-soft-error text-error";
-            case "Rejected": return "badge-soft-neutral text-neutral";
-            default: return "badge-ghost";
+            case "Active": return "bg-green-100 text-green-700";
+            case "Pending": return "bg-orange-100 text-orange-700";
+            case "Banned": return "bg-red-100 text-red-700";
+            case "Rejected": return "bg-gray-100 text-gray-700";
+            default: return "bg-gray-100 text-gray-700";
         }
     };
 
@@ -36,9 +38,24 @@ const UserListTable = () => {
         return matchesTab && matchesSearch && matchesRole;
     });
 
+    // Pagination logic
+    const handleChangePage = (newPage) => {
+        setPage(newPage);
+    };
+
+    const handleChangeRowsPerPage = (event) => {
+        setRowsPerPage(parseInt(event.target.value, 10));
+        setPage(0);
+    };
+
+    const visibleUsers = filteredUsers.slice(
+        page * rowsPerPage,
+        page * rowsPerPage + rowsPerPage
+    );
+
     const handleSelectAll = (e) => {
         if (e.target.checked) {
-            setSelectedUsers(filteredUsers.map(u => u.id));
+            setSelectedUsers(visibleUsers.map(u => u.id));
         } else {
             setSelectedUsers([]);
         }
@@ -60,10 +77,10 @@ const UserListTable = () => {
                     {tabs.map((tab) => (
                         <button
                             key={tab.id}
-                            onClick={() => setActiveTab(tab.id)}
+                            onClick={() => { setActiveTab(tab.id); setPage(0); }}
                             className={`pb-4 flex items-center gap-2 border-b-2 transition-all ${activeTab === tab.id
-                                    ? "border-black text-black font-semibold"
-                                    : "border-transparent text-gray-500 hover:text-gray-700"
+                                ? "border-black text-black font-semibold"
+                                : "border-transparent text-gray-500 hover:text-gray-700"
                                 }`}
                         >
                             {tab.label}
@@ -81,7 +98,7 @@ const UserListTable = () => {
                 <select
                     className="select select-bordered w-full sm:w-40 font-medium text-gray-600"
                     value={roleFilter}
-                    onChange={(e) => setRoleFilter(e.target.value)}
+                    onChange={(e) => { setRoleFilter(e.target.value); setPage(0); }}
                 >
                     <option>Role</option>
                     <option>Content Creator</option>
@@ -101,7 +118,7 @@ const UserListTable = () => {
                         placeholder="Search..."
                         className="input input-bordered w-full pl-10"
                         value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
+                        onChange={(e) => { setSearchQuery(e.target.value); setPage(0); }}
                     />
                 </div>
                 <button className="btn btn-ghost btn-circle">
@@ -120,7 +137,7 @@ const UserListTable = () => {
                                         type="checkbox"
                                         className="checkbox checkbox-sm rounded-md"
                                         onChange={handleSelectAll}
-                                        checked={selectedUsers.length === filteredUsers.length && filteredUsers.length > 0}
+                                        checked={visibleUsers.length > 0 && selectedUsers.length === visibleUsers.length}
                                     />
                                 </label>
                             </th>
@@ -133,7 +150,7 @@ const UserListTable = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {filteredUsers.map((user) => (
+                        {visibleUsers.map((user) => (
                             <tr key={user.id} className="hover:bg-base-50 transition-colors border-b border-base-100 last:border-none">
                                 <th className="pl-6">
                                     <label>
@@ -162,11 +179,7 @@ const UserListTable = () => {
                                 <td className="text-gray-600">{user.company}</td>
                                 <td className="text-gray-600">{user.role}</td>
                                 <td>
-                                    <div className={`badge border-none font-semibold ${user.status === 'Active' ? 'bg-green-100 text-green-700' :
-                                            user.status === 'Pending' ? 'bg-orange-100 text-orange-700' :
-                                                user.status === 'Banned' ? 'bg-red-100 text-red-700' :
-                                                    'bg-gray-100 text-gray-700'
-                                        }`}>
+                                    <div className={`badge border-none font-semibold ${getStatusColor(user.status)}`}>
                                         {user.status}
                                     </div>
                                 </td>
@@ -184,6 +197,43 @@ const UserListTable = () => {
                         ))}
                     </tbody>
                 </table>
+            </div>
+
+            {/* Pagination */}
+            <div className="flex items-center justify-end p-4 border-t border-base-200">
+                <div className="flex items-center gap-2">
+                    <span className="text-sm text-gray-500">Rows per page:</span>
+                    <select
+                        className="select select-bordered select-xs"
+                        value={rowsPerPage}
+                        onChange={handleChangeRowsPerPage}
+                    >
+                        <option value={5}>5</option>
+                        <option value={10}>10</option>
+                        <option value={25}>25</option>
+                    </select>
+                </div>
+                <div className="flex items-center gap-2 ml-4">
+                    <span className="text-sm text-gray-500">
+                        {filteredUsers.length > 0 ? page * rowsPerPage + 1 : 0}-{Math.min((page + 1) * rowsPerPage, filteredUsers.length)} of {filteredUsers.length}
+                    </span>
+                    <div className="join">
+                        <button
+                            className="join-item btn btn-sm btn-ghost"
+                            disabled={page === 0}
+                            onClick={() => handleChangePage(page - 1)}
+                        >
+                            <ChevronLeft size={16} />
+                        </button>
+                        <button
+                            className="join-item btn btn-sm btn-ghost"
+                            disabled={(page + 1) * rowsPerPage >= filteredUsers.length}
+                            onClick={() => handleChangePage(page + 1)}
+                        >
+                            <ChevronRight size={16} />
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     );
