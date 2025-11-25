@@ -58,7 +58,6 @@ const App = () => {
           <Route path="user-create" element={<UserCreate />} />
           <Route path="user-edit" element={<EditUser />} />
           <Route path="user-account" element={<UserAccount />} />
-          <Route path="settings" element={<div>Settings Page Content</div>} />
         </Route>
       </Routes>
     </AuthProvider>

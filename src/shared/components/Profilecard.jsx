@@ -10,12 +10,15 @@ import ProfileFriends from "../../features/dashboard/components/profile/ProfileF
 import ProfileGallery from "../../features/dashboard/components/profile/ProfileGallery";
 import profileData from "../../features/dashboard/data/profileData.json";
 
+import { useSearchParams } from "react-router";
+
 const Profilecard = () => {
   const { user, posts } = profileData;
-  const [activeTab, setActiveTab] = React.useState('Profile');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const activeTab = searchParams.get('tab') || 'Profile';
 
   const handleTabChange = (tabId) => {
-    setActiveTab(tabId);
+    setSearchParams({ tab: tabId });
   };
 
   return (
