@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { User, FileText, Bell, Share2, Key } from 'lucide-react';
 import AccountGeneral from './AccountGeneral';
+import AccountBilling from './AccountBilling';
+import AccountNotifications from './AccountNotifications';
+import AccountSocialLinks from './AccountSocialLinks';
+import AccountSecurity from './AccountSecurity';
 
 const UserAccount = () => {
     const [activeTab, setActiveTab] = useState('General');
@@ -42,6 +46,14 @@ const UserAccount = () => {
             <div className="mt-6">
                 {activeTab === 'General' ? (
                     <AccountGeneral />
+                ) : activeTab === 'Billing' ? (
+                    <AccountBilling />
+                ) : activeTab === 'Notifications' ? (
+                    <AccountNotifications />
+                ) : activeTab === 'Social links' ? (
+                    <AccountSocialLinks />
+                ) : activeTab === 'Security' ? (
+                    <AccountSecurity />
                 ) : (
                     <div className="card bg-base-100 shadow-xl p-10 text-center">
                         <h3 className="text-xl font-bold mb-2">{activeTab}</h3>

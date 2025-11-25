@@ -12,7 +12,7 @@ const News = () => {
             <div className="flex-1 overflow-y-auto space-y-6">
                 {newsData.map((item) => (
                     <div key={item.id} className="flex items-start space-x-4 group cursor-pointer">
-                        <div className="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0">
+                        <div className="w-12 h-12 rounded-lg overflow-hidden shrink-0">
                             <img
                                 src={item.image}
                                 alt={item.title}

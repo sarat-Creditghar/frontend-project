@@ -1,0 +1,136 @@
+{
+    "plans": [
+        {
+            "id": 1,
+            "type": "Basic",
+            "price": "Free",
+            "isCurrent": false,
+            "icon": "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
+        },
+        {
+            "id": 2,
+            "type": "Starter",
+            "price": "4.99",
+            "period": "/mo",
+            "isCurrent": true,
+            "icon": "https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
+        },
+        {
+            "id": 3,
+            "type": "Premium",
+            "price": "9.99",
+            "period": "/mo",
+            "isCurrent": false,
+            "icon": "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
+        }
+    ],
+    "cards": [
+        {
+            "id": 1,
+            "type": "Mastercard",
+            "number": "**** **** **** 1234",
+            "isDefault": false,
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png"
+        },
+        {
+            "id": 2,
+            "type": "Visa",
+            "number": "**** **** **** 5678",
+            "isDefault": true,
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1280px-Visa_Inc._logo.svg.png"
+        },
+        {
+            "id": 3,
+            "type": "Visa",
+            "number": "**** **** **** 7878",
+            "isDefault": false,
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1280px-Visa_Inc._logo.svg.png"
+        }
+    ],
+    "addresses": [
+        {
+            "id": 1,
+            "name": "Jayvion Simon",
+            "type": "Home",
+            "isDefault": true,
+            "fullAddress": "19034 Verna Unions Apt. 164 - Honolulu, RI / 87535",
+            "phone": "+1 202-555-0143"
+        },
+        {
+            "id": 2,
+            "name": "Lucian Obrien",
+            "type": "Office",
+            "isDefault": false,
+            "fullAddress": "1147 Rohan Drive Suite 819 - Burlington, VT / 82021",
+            "phone": "+1 416-555-0198"
+        },
+        {
+            "id": 3,
+            "name": "Deja Brady",
+            "type": "Office",
+            "isDefault": false,
+            "fullAddress": "18605 Thompson Circle Apt. 086 - Idaho Falls, WV / 50337",
+            "phone": "+44 20 7946 0958"
+        },
+        {
+            "id": 4,
+            "name": "Harrison Stein",
+            "type": "Office",
+            "isDefault": false,
+            "fullAddress": "110 Lamar Station Apt. 730 - Hagerstown, OK / 49808",
+            "phone": "+61 2 9876 5432"
+        }
+    ],
+    "invoices": [
+        {
+            "id": "INV-1990",
+            "date": "23 Nov 2025",
+            "amount": "$83.74"
+        },
+        {
+            "id": "INV-1991",
+            "date": "22 Nov 2025",
+            "amount": "$97.14"
+        },
+        {
+            "id": "INV-1992",
+            "date": "21 Nov 2025",
+            "amount": "$68.71"
+        },
+        {
+            "id": "INV-1993",
+            "date": "20 Nov 2025",
+            "amount": "$85.21"
+        },
+        {
+            "id": "INV-1994",
+            "date": "19 Nov 2025",
+            "amount": "$52.17"
+        },
+        {
+            "id": "INV-1995",
+            "date": "18 Nov 2025",
+            "amount": "$25.18"
+        },
+        {
+            "id": "INV-1996",
+            "date": "17 Nov 2025",
+            "amount": "$43.84"
+        },
+        {
+            "id": "INV-1997",
+            "date": "16 Nov 2025",
+            "amount": "$60.98"
+        },
+        {
+            "id": "INV-1998",
+            "date": "15 Nov 2025",
+            "amount": "$98.42"
+        },
+        {
+            "id": "INV-1999",
+            "date": "14 Nov 2025",
+            "amount": "$53.37"
+        }
+    ]
+}

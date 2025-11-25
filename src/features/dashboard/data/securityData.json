@@ -1,0 +1,21 @@
+[
+    {
+        "name": "oldPassword",
+        "label": "Old password",
+        "type": "password",
+        "placeholder": ""
+    },
+    {
+        "name": "newPassword",
+        "label": "New password",
+        "type": "password",
+        "placeholder": "",
+        "helperText": "Password must be minimum 6+"
+    },
+    {
+        "name": "confirmNewPassword",
+        "label": "Confirm new password",
+        "type": "password",
+        "placeholder": ""
+    }
+]

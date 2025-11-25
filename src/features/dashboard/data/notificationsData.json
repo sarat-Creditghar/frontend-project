@@ -1,0 +1,46 @@
+[
+    {
+        "id": "activity",
+        "title": "Activity",
+        "description": "Donec mi odio, faucibus at, scelerisque quis",
+        "items": [
+            {
+                "id": "email_comments",
+                "label": "Email me when someone comments onmy article",
+                "defaultChecked": true
+            },
+            {
+                "id": "email_answers",
+                "label": "Email me when someone answers on my form",
+                "defaultChecked": false
+            },
+            {
+                "id": "email_follows",
+                "label": "Email me hen someone follows me",
+                "defaultChecked": false
+            }
+        ]
+    },
+    {
+        "id": "application",
+        "title": "Application",
+        "description": "Donec mi odio, faucibus at, scelerisque quis",
+        "items": [
+            {
+                "id": "news",
+                "label": "News and announcements",
+                "defaultChecked": false
+            },
+            {
+                "id": "weekly_product",
+                "label": "Weekly product updates",
+                "defaultChecked": true
+            },
+            {
+                "id": "weekly_blog",
+                "label": "Weekly blog digest",
+                "defaultChecked": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "id": "facebook",
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/frankie",
+        "icon": "Facebook"
+    },
+    {
+        "id": "instagram",
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/frankie",
+        "icon": "Instagram"
+    },
+    {
+        "id": "linkedin",
+        "platform": "Linkedin",
+        "url": "https://www.linkedin.com/in/frankie",
+        "icon": "Linkedin"
+    },
+    {
+        "id": "twitter",
+        "platform": "Twitter",
+        "url": "https://www.twitter.com/frankie",
+        "icon": "Twitter"
+    }
+]
